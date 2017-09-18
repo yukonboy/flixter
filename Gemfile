@@ -64,3 +64,9 @@ end
 
 # Include Simple Form gem
 gem 'simple_form'
+
+# Include Devise gem
+gem 'devise'
+
+# Include Font Awesome gem
+gem 'font-awesome-rails'
