@@ -65,8 +65,26 @@ end
 # Include Simple Form gem
 gem 'simple_form'
 
+# Include Font-Awesome gem
+gem 'font-awesome-rails'
+
 # Include Devise gem
 gem 'devise'
 
-# Include Font Awesome gem
-gem 'font-awesome-rails'
+# Include Geocoder gem
+gem 'geocoder'
+
+# Include Figaro gem to enable storage of API Key into ENV variable
+gem 'figaro'
+
+# Include Carrierwave gem as uploader for photos
+gem 'carrierwave'
+
+# Include gem Minimagick to work with Imagemagick for manipulating images and saving memory during runs
+gem 'mini_magick'
+
+# Include gem FancyBox to provide instant photo resizing and touch/scroll results
+gem 'fancybox-rails', '~> 0.3.1'
+
+# Include fog gem to work with AWS
+#gem 'fog-aws'

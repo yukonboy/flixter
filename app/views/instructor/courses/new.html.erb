@@ -5,8 +5,16 @@
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :cost %>
+    <%= f.input :image %>
     <br />
     <%= f.submit "Create", class: 'btn btn-primary' %>
+    
+    <div class="float-right">
+      <button type="button" class="btn btn-primary" >
+        Upload Photo
+      </button>
+    </div>
+  
   <% end %>
   <br />
   
@@ -15,3 +23,16 @@
   <!--  <%#= link_to "<< Back <<", root_url %>-->
   <!--</div>-->
 </div>
+
+
+<!--<%#= simple_form_for @photo, url: place_photos_path(@place), multiple: true do |f| %>-->
+<!--        <div class="modal-body">     -->
+<!--          <%#= f.input :picture %>-->
+<!--          <%#= f.input :caption %><br />-->
+<!--        </div>-->
+
+<!--<div class="float-right">-->
+<!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myPhotoModal">-->
+<!--      Upload Photo-->
+<!--    </button>-->
+<!--  </div>-->
