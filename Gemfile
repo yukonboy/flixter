@@ -87,4 +87,4 @@ gem 'mini_magick'
 gem 'fancybox-rails', '~> 0.3.1'
 
 # Include fog gem to work with AWS
-#gem 'fog-aws'
+gem 'fog-aws'
