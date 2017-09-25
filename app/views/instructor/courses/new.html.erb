@@ -5,34 +5,21 @@
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :cost %>
-    <%= f.input :image %>
-    <br />
+    
+    <!--<div class="float-right">-->
+    <%= simple_form_for @course, url: instructor_course_images_path do |f| %>
+      <%= f.input :image %>
+    <% end %>
+    <!--<button type="button" class="btn btn-primary" >-->
+    <!--  Upload Photo-->
+    <!--</button>-->
+    <!--</div>-->
+    
     <%= f.submit "Create", class: 'btn btn-primary' %>
     
+    <!-- Include BACK link -->
     <div class="float-right">
-      <button type="button" class="btn btn-primary" >
-        Upload Photo
-      </button>
+        <%= link_to "<< Back <<", root_url %>
     </div>
-  
   <% end %>
-  <br />
-  
-  <!-- Include BACK link -->
-  <!--<div class="float-right"> -->
-  <!--  <%#= link_to "<< Back <<", root_url %>-->
-  <!--</div>-->
 </div>
-
-
-<!--<%#= simple_form_for @photo, url: place_photos_path(@place), multiple: true do |f| %>-->
-<!--        <div class="modal-body">     -->
-<!--          <%#= f.input :picture %>-->
-<!--          <%#= f.input :caption %><br />-->
-<!--        </div>-->
-
-<!--<div class="float-right">-->
-<!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myPhotoModal">-->
-<!--      Upload Photo-->
-<!--    </button>-->
-<!--  </div>-->
