@@ -1,7 +1,7 @@
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1>Add a new course</h1>
-  <%= simple_form_for @course, url: instructor_courses_path do |f| %>
+  <%= simple_form_for @course do |f| %>
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :cost %>
@@ -23,16 +23,3 @@
   <!--  <%#= link_to "<< Back <<", root_url %>-->
   <!--</div>-->
 </div>
-
-
-<!--<%#= simple_form_for @photo, url: place_photos_path(@place), multiple: true do |f| %>-->
-<!--        <div class="modal-body">     -->
-<!--          <%#= f.input :picture %>-->
-<!--          <%#= f.input :caption %><br />-->
-<!--        </div>-->
-
-<!--<div class="float-right">-->
-<!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myPhotoModal">-->
-<!--      Upload Photo-->
-<!--    </button>-->
-<!--  </div>-->
