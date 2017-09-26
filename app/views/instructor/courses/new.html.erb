@@ -5,15 +5,15 @@
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :cost %>
-    <%= f.input :image %>
+    <%= f.input :image, height: '100px', class: :thumb %>
     <br />
     <%= f.submit "Create", class: 'btn btn-primary' %>
     
-    <div class="float-right">
-      <button type="button" class="btn btn-primary" >
-        Upload Photo
-      </button>
-    </div>
+    <!--<div class="float-right">-->
+    <!--  <button type="button" class="btn btn-primary" >-->
+    <!--    Upload Photo-->
+    <!--  </button>-->
+    <!--</div>-->
   
   <% end %>
   <br />
